@@ -26,7 +26,7 @@
 
     <groupId>io.dtk</groupId>
     <artifactId>ignite-query-objects</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <packaging>jar</packaging>
 
@@ -34,22 +34,18 @@
       <dependency>
         <groupId>org.apache.ignite</groupId>
         <artifactId>ignite-core</artifactId>
-        <version>1.4.0</version>
+        <version>1.5.0</version>
+        <scope>system</scope>  
+        <systemPath>/home/ec2-user/apache-ignite-jars/libs/ignite-core-1.5.0-SNAPSHOT.jar</systemPath>
       </dependency>
       <dependency>
         <groupId>org.apache.ignite</groupId>
         <artifactId>ignite-indexing</artifactId>
-        <version>1.4.0</version>
+        <version>1.5.0</version>
+        <scope>system</scope>  
+        <systemPath>/home/ec2-user/apache-ignite-jars/libs/ignite-indexing/ignite-indexing-1.5.0-SNAPSHOT.jar</systemPath>
       </dependency>
     </dependencies>
-
-    <repositories>
-      <repository>
-        <id>ignite</id>
-        <name>Ignite repos</name>
-        <url>http://www.gridgainsystems.com/nexus/content/repositories/external</url>
-      </repository>
-    </repositories>
 
     <distributionManagement>
         <repository>

@@ -7,8 +7,9 @@ public class Actor implements Serializable {
   private String avatar_url;
   @QuerySqlField
   private String gravatar_id;
-  @QuerySqlField
+
   private Long id; 
+
   @QuerySqlField(index = true)
   private String login;
   @QuerySqlField
@@ -75,7 +76,8 @@ public class Actor implements Serializable {
 
     /** {@inheritDoc} */
     @Override public String toString() {
-        return "Actor [login=" + login +
+        return "Actor [id=" + id +
+            ", login=" + login +
             ", avatar_url=" + avatar_url +
             ", gravatar_id=" + gravatar_id +
             ", url=" + url +
