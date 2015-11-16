@@ -1,18 +1,11 @@
 package io.dtk;
-import org.apache.ignite.cache.query.annotations.QuerySqlField;
 import java.io.Serializable;
 
 public class Actor implements Serializable {
-  @QuerySqlField
   private String avatar_url;
-  @QuerySqlField
   private String gravatar_id;
-
   private Long id; 
-
-  @QuerySqlField(index = true)
   private String login;
-  @QuerySqlField
   private String url;
 
   public Actor(
@@ -85,6 +78,3 @@ public class Actor implements Serializable {
     }
 
 }
-
-
-
